@@ -10,21 +10,25 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
         body {
             font-family: 'Inter', sans-serif;
-            /* NOVO: Gradiente de fundo que preenche toda a página */
-            background: linear-gradient(to right, #60a5fa, #fcd34d);
-            background-attachment: fixed; /* Fixa o gradiente para que não role com o conteúdo */
+            /* Cor de fundo de fallback sólida */
+            background-color: #f0f4f8;
             min-height: 100vh;
         }
     </style>
 </head>
 <body class="text-gray-800">
 
-    <!-- CABEÇALHO DA PÁGINA: Fundo semi-transparente para o gradiente brilhar -->
+    <!-- NOVO CABEÇALHO DA PÁGINA: Fundo com Gradiente de Cores e menu sobreposto -->
+    <!-- Substituímos a imagem de fundo por um gradiente de cores para maior fiabilidade -->
     <header class="relative overflow-hidden w-full h-[200px] rounded-b-xl mx-auto max-w-5xl">
-        <!-- ATUALIZAÇÃO: Fundo preto semi-transparente para que o texto fique legível e o gradiente do body seja visível -->
+        <!-- ATUALIZAÇÃO: Gradiente de fundo que simula o céu ou o sol para o cabeçalho.
+             Isto garante que o fundo será sempre exibido sem depender de imagens externas. -->
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-400 to-yellow-400"></div>
+        
+        <!-- Camada 2: Sobreposição semi-transparente para melhorar a legibilidade do texto. -->
         <div class="absolute inset-0 bg-black/40"></div>
         
-        <!-- Conteúdo do cabeçalho posicionado sobre o fundo semi-transparente -->
+        <!-- Camada 3: Conteúdo (título e navegação) posicionado sobre as camadas anteriores. -->
         <div class="absolute inset-0 flex flex-col justify-center items-center text-center p-4 z-10">
             <!-- Título da Empresa sobreposto -->
             <h1 class="text-white text-3xl sm:text-4xl font-extrabold drop-shadow-md">BR4S Treinamentos</h1>
