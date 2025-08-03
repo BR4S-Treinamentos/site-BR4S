@@ -10,25 +10,38 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
         body {
             font-family: 'Inter', sans-serif;
-            /* Cor de fundo de fallback sólida */
-            background-color: #f0f4f8;
             min-height: 100vh;
+        }
+
+        /* Container de fundo para a imagem do Google Drive */
+        /* Use este estilo para aplicar a imagem de fundo de forma correta */
+        .background-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            /* A URL abaixo usa um link especial para carregar a imagem do Google Drive.
+               CERTIFIQUE-SE DE QUE A IMAGEM ESTÁ COMPARTILHADA PUBLICAMENTE.
+               Substitua [SEU_ID_DA_IMAGEM_DO_GOOGLE_DRIVE] pelo ID da sua imagem. */
+            background-image: url('https://drive.google.com/uc?export=view&id=[1-dAIdTwkAmieCV7yqcM4lApp8f7bHSrB]');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
     </style>
 </head>
 <body class="text-gray-800">
 
-    <!-- NOVO CABEÇALHO DA PÁGINA: Fundo com Gradiente de Cores e menu sobreposto -->
-    <!-- Substituímos a imagem de fundo por um gradiente de cores para maior fiabilidade -->
+    <!-- NOVO: Container para a imagem de fundo -->
+    <div class="background-container"></div>
+
+    <!-- Cabeçalho da Página com fundo semi-transparente para o gradiente brilhar -->
     <header class="relative overflow-hidden w-full h-[200px] rounded-b-xl mx-auto max-w-5xl">
-        <!-- ATUALIZAÇÃO: Gradiente de fundo que simula o céu ou o sol para o cabeçalho.
-             Isto garante que o fundo será sempre exibido sem depender de imagens externas. -->
-        <div class="absolute inset-0 bg-gradient-to-r from-blue-400 to-yellow-400"></div>
-        
-        <!-- Camada 2: Sobreposição semi-transparente para melhorar a legibilidade do texto. -->
+        <!-- Fundo semi-transparente para o conteúdo do cabeçalho ficar legível -->
         <div class="absolute inset-0 bg-black/40"></div>
         
-        <!-- Camada 3: Conteúdo (título e navegação) posicionado sobre as camadas anteriores. -->
         <div class="absolute inset-0 flex flex-col justify-center items-center text-center p-4 z-10">
             <!-- Título da Empresa sobreposto -->
             <h1 class="text-white text-3xl sm:text-4xl font-extrabold drop-shadow-md">BR4S Treinamentos</h1>
@@ -48,7 +61,7 @@
     <main class="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
 
         <!-- Seção Sobre o Negócio com fundo semi-transparente -->
-        <section id="sobre" class="bg-white/90 p-8 rounded-xl shadow-lg mt-8">
+        <section id="sobre" class="bg-white/80 p-8 rounded-xl shadow-lg mt-8">
             <h2 class="text-2xl font-bold text-gray-800 mb-4">Sobre Nós</h2>
             <p class="text-gray-600 leading-relaxed">
                 A BR4S Treinamentos é uma empresa especializada em capacitação e desenvolvimento profissional no setor de energia solar. Com foco em treinamentos técnicos de alta qualidade, equipamos nossos alunos com o conhecimento e as habilidades práticas necessárias para prosperar neste mercado em constante expansão, contribuindo para a construção de um futuro mais sustentável.
@@ -67,7 +80,7 @@
         </section>
 
         <!-- Seção de Serviços com fundo semi-transparente -->
-        <section id="servicos" class="bg-white/90 p-8 rounded-xl shadow-lg mt-8">
+        <section id="servicos" class="bg-white/80 p-8 rounded-xl shadow-lg mt-8">
             <h2 class="text-2xl font-bold text-gray-800 mb-4">O Que Oferecemos</h2>
             <ul class="list-disc list-inside space-y-2 text-gray-600">
                 <li><strong class="font-semibold">Comprometimento:</strong> Nosso compromisso com o treinamento em energia solar vai além da sala de aula. Atuamos com seriedade na formação de profissionais capacitados, atualizados e prontos para os desafios do setor. Cumprimos prazos, oferecemos suporte contínuo e garantimos que cada aluno receba a atenção necessária para desenvolver suas habilidades com excelência.</li>
@@ -80,7 +93,7 @@
         </section>
 
         <!-- Seção de Contato com fundo semi-transparente e contatos atualizados -->
-        <section id="contato" class="bg-white/90 p-8 rounded-xl shadow-lg mt-8">
+        <section id="contato" class="bg-white/80 p-8 rounded-xl shadow-lg mt-8">
             <h2 class="text-2xl font-bold text-gray-800 mb-4">Contato</h2>
             <p class="text-gray-600 leading-relaxed">
                 Estamos sempre disponíveis para conversar. Envie-nos um email ou ligue para nós.
@@ -115,7 +128,7 @@
         </section>
 
         <!-- Seção de Política de Privacidade com fundo semi-transparente -->
-        <section id="privacidade" class="bg-white/90 p-8 rounded-xl shadow-lg my-8">
+        <section id="privacidade" class="bg-white/80 p-8 rounded-xl shadow-lg my-8">
             <h2 class="text-2xl font-bold text-gray-800 mb-4">Política de Privacidade</h2>
             <p class="text-gray-600 leading-relaxed">
                 Esta política de privacidade descreve como BR4S Treinamentos coleta, usa e protege as suas informações pessoais. Ao interagir conosco, você concorda com os termos desta política.
@@ -149,7 +162,7 @@
     </main>
 
     <!-- Rodapé da Página com fundo semi-transparente -->
-    <footer class="bg-gray-900/90 text-gray-200 rounded-t-xl mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-6 mt-8">
+    <footer class="bg-gray-900/40 text-gray-200 rounded-t-xl mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-6 mt-8">
         <p class="text-center text-sm">&copy; <span id="ano"></span> BR4S Treinamentos. Todos os direitos reservados.</p>
     </footer>
 
