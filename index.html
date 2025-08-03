@@ -10,18 +10,8 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
         body {
             font-family: 'Inter', sans-serif;
-            /* Cor de fundo de fallback */
+            /* Cor de fundo de fallback sólida para maior compatibilidade */
             background-color: #f0f4f8;
-
-            /*
-             ATUALIZAÇÃO: Nova URL de imagem para o fundo do corpo.
-             Esta é uma imagem ampla de uma fazenda solar que transmite a escala da tecnologia.
-            */
-            background-image: url('https://images.unsplash.com/photo-1509204043232-a58d601b6727?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
             min-height: 100vh;
         }
     </style>
@@ -29,10 +19,11 @@
 <body class="text-gray-800">
 
     <!-- NOVO CABEÇALHO DA PÁGINA: Imagem de fundo com menu sobreposto -->
+    <!-- A imagem de fundo agora está apenas no cabeçalho para maior estabilidade -->
     <header class="relative overflow-hidden w-full h-[200px] rounded-b-xl mx-auto max-w-5xl">
-        <!-- ATUALIZAÇÃO: Nova URL de imagem para o cabeçalho. -->
-        <!-- Esta imagem é um close-up que complementa o fundo principal. -->
-        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1507646698642-1e9de4594c16?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center"></div>
+        <!-- ATUALIZAÇÃO: Nova URL de imagem para o cabeçalho.
+             Esta é uma imagem ampla de uma fazenda solar que transmite a escala da tecnologia. -->
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1549673894-6d9b047a0c86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTUyMjd8MHwxfHNlYXJjaHw0MHx8ZW5lcmdpYSUyMHNvbGFyfGVufDB8fHx8MTcyMjYwNjk0M3ww&ixlib=rb-4.0.3&q=80&w=1080')] bg-cover bg-center"></div>
         
         <!-- Camada 2: Sobreposição semi-transparente para melhorar a legibilidade do texto. -->
         <div class="absolute inset-0 bg-black/40"></div>
