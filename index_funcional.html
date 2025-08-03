@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BR4S Treinamentos</title>
+    <!-- Inclui o Tailwind CSS para um design rápido e responsivo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            
+            /* ATUALIZAÇÃO: Gradiente de segurança (fallback) e imagem de fundo */
+            /* A ordem é importante: o gradiente será exibido se a imagem falhar */
+            background: linear-gradient(to right, #60a5fa, #fcd34d);
+            background-image: url('https://drive.google.com/uc?export=view&id=1-dAIdTwkAmieCV7yqcM4lApp8f7bHSrB');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Fixa o fundo para não rolar com a página */
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Cabeçalho da Página com fundo semi-transparente para o gradiente brilhar -->
+    <header class="relative overflow-hidden w-full h-[200px] rounded-b-xl mx-auto max-w-5xl">
+        <!-- Fundo semi-transparente para o conteúdo do cabeçalho ficar legível -->
+        <div class="absolute inset-0 bg-black/50"></div>
+        
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-center p-4 z-10">
+            <!-- Título da Empresa sobreposto -->
+            <h1 class="text-white text-3xl sm:text-4xl font-extrabold drop-shadow-md">BR4S Treinamentos</h1>
+            
+            <!-- Menu de Navegação sobreposto -->
+            <nav class="mt-4">
+                <div class="flex flex-wrap justify-center space-x-4 sm:space-x-8 text-sm sm:text-base">
+                    <a href="#sobre" class="text-white hover:text-blue-300 font-medium transition duration-300 drop-shadow-md">Sobre</a>
+                    <a href="#servicos" class="text-white hover:text-blue-300 font-medium transition duration-300 drop-shadow-md">Serviços</a>
+                    <a href="#contato" class="text-white hover:text-blue-300 font-medium transition duration-300 drop-shadow-md">Contato</a>
+                    <a href="#privacidade" class="text-white hover:text-blue-300 font-medium transition duration-300 drop-shadow-md">Política de Privacidade</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+
+        <!-- Seção Sobre o Negócio com fundo semi-transparente -->
+        <section id="sobre" class="bg-white/70 p-8 rounded-xl shadow-lg mt-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Sobre Nós</h2>
+            <p class="text-gray-600 leading-relaxed">
+                A BR4S Treinamentos é uma empresa especializada em capacitação e desenvolvimento profissional no setor de energia solar. Com foco em treinamentos técnicos de alta qualidade, equipamos nossos alunos com o conhecimento e as habilidades práticas necessárias para prosperar neste mercado em constante expansão, contribuindo para a construção de um futuro mais sustentável.
+            </p>
+            <h3 class="text-xl font-semibold text-gray-700 mt-6 mb-2">Nossa Missão</h3>
+            <p class="text-gray-600 leading-relaxed">
+                Nossa missão é impulsionar a transição energética do Brasil, formando profissionais competentes e inovadores no campo da energia solar. Buscamos democratizar o acesso ao conhecimento técnico, capacitando indivíduos a criar novas oportunidades de carreira e a instalar soluções que gerem um impacto positivo no meio ambiente e na economia.
+            </p>
+            <h3 class="text-xl font-semibold text-gray-700 mt-6 mb-2">Nossos Valores</h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-600 leading-relaxed">
+                <li><strong class="font-semibold">Excelência Educacional:</strong> Comprometemo-nos a oferecer o mais alto padrão de ensino, com instrutores qualificados e materiais didáticos atualizados.</li>
+                <li><strong class="font-semibold">Sustentabilidade:</strong> Acreditamos que a energia solar é fundamental para um futuro sustentável e, por isso, promovemos a sua utilização de forma responsável e eficiente.</li>
+                <li><strong class="font-semibold">Inovação:</strong> Estamos sempre atentos às novas tecnologias e metodologias, integrando-as em nossos cursos para garantir que nossos alunos estejam sempre à frente no mercado.</li>
+                <li><strong class="font-semibold">Acessibilidade:</strong> Buscamos tornar o conhecimento sobre energia solar acessível, oferecendo soluções de treinamento flexíveis para atender a diferentes necessidades.</li>
+            </ul>
+        </section>
+
+        <!-- Seção de Serviços com fundo semi-transparente -->
+        <section id="servicos" class="bg-white/70 p-8 rounded-xl shadow-lg mt-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">O Que Oferecemos</h2>
+            <ul class="list-disc list-inside space-y-2 text-gray-600">
+                <li><strong class="font-semibold">Comprometimento:</strong> Nosso compromisso com o treinamento em energia solar vai além da sala de aula. Atuamos com seriedade na formação de profissionais capacitados, atualizados e prontos para os desafios do setor. Cumprimos prazos, oferecemos suporte contínuo e garantimos que cada aluno receba a atenção necessária para desenvolver suas habilidades com excelência.</li>
+                <li><strong class="font-semibold">Qualidade:</strong> Oferecemos treinamentos de alta qualidade, com conteúdo técnico atualizado, instrutores experientes e estrutura prática completa. Nossa metodologia une teoria e prática em ambientes reais, preparando o aluno para atuar com confiança em instalações, manutenção e dimensionamento de sistemas fotovoltaicos.</li>
+                <li><strong class="font-semibold">Satisfação do cliente:</strong> A satisfação de nossos alunos é o que nos move. Avaliamos constantemente nossos cursos para oferecer uma experiência completa, com material didático claro, linguagem acessível e suporte dedicado. O objetivo é garantir que cada participante saia preparado, confiante e com perspectivas reais de atuação no mercado de energia solar.</li>
+            </ul>
+            <p class="text-gray-600 leading-relaxed mt-4">
+                Para saber mais sobre nosso Treinamento e como podemos ajudar, entre em contato através dos nossos canais de atendimento.
+            </p>
+        </section>
+
+        <!-- Seção de Contato com fundo semi-transparente e contatos atualizados -->
+        <section id="contato" class="bg-white/70 p-8 rounded-xl shadow-lg mt-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Contato</h2>
+            <p class="text-gray-600 leading-relaxed">
+                Estamos sempre disponíveis para conversar. Envie-nos um email ou ligue para nós.
+            </p>
+            <!-- Lista de contatos com ícones SVG inline -->
+            <ul class="list-none space-y-4 mt-4 text-gray-600">
+                <li class="flex items-center">
+                    <!-- Ícone de Email -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.896 4.737a2 2 0 002.208 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    <strong class="font-semibold">Email:</strong> <a href="mailto:br4streinamentos@gmail.com" class="text-blue-500 hover:underline ml-2">br4streinamentos@gmail.com</a>
+                </li>
+                <li class="flex items-center">
+                    <!-- Ícone de Telefone -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.5l1.5 5 2-3h3a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V5z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 21a10 10 0 0010-10H11v10z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v6m3-3H9" />
+                    </svg>
+                    <strong class="font-semibold">Telefone:</strong> (12) XXXX-XXXX
+                </li>
+                <li class="flex items-start">
+                    <!-- Ícone de Endereço -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-blue-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    <strong class="font-semibold">Endereço:</strong> Rua Sabará, 60 - Jardim Ismenia - São José dos Campos, São Paulo, CEP 12220-661
+                </li>
+            </ul>
+        </section>
+
+        <!-- Seção de Política de Privacidade com fundo semi-transparente -->
+        <section id="privacidade" class="bg-white/70 p-8 rounded-xl shadow-lg my-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Política de Privacidade</h2>
+            <p class="text-gray-600 leading-relaxed">
+                Esta política de privacidade descreve como BR4S Treinamentos coleta, usa e protege as suas informações pessoais. Ao interagir conosco, você concorda com os termos desta política.
+            </p>
+            <h3 class="text-xl font-semibold text-gray-700 mt-6 mb-2">Informações Coletadas</h3>
+            <p class="text-gray-600 leading-relaxed">
+                Coletamos informações que você nos fornece diretamente, como nome, email e número de telefone, quando entra em contato conosco ou manifesta interesse nos nossos serviços.
+            </p>
+            <h3 class="text-xl font-semibold text-gray-700 mt-4 mb-2">Uso das Informações</h3>
+            <p class="text-gray-600 leading-relaxed">
+                Usamos as informações coletadas para:
+                <ul class="list-disc list-inside mt-2 space-y-1">
+                    <li>Fornecer, operar e manter os nossos serviços.</li>
+                    <li>Melhorar, personalizar e expandir os nossos serviços.</li>
+                    <li>Comunicar-nos com você, incluindo via WhatsApp, para fins de suporte ao cliente, para lhe fornecer atualizações e outras informações relacionadas ao serviço.</li>
+                </ul>
+            </p>
+            <p class="text-gray-600 leading-relaxed mt-4">
+                <strong>Consentimento para uso do WhatsApp:</strong> Ao nos fornecer o seu número de telefone e iniciar uma conversa, você nos dá o seu consentimento para que possamos enviar mensagens relacionadas aos nossos serviços através do WhatsApp. Você pode revogar este consentimento a qualquer momento.
+            </p>
+            <h3 class="text-xl font-semibold text-gray-700 mt-4 mb-2">Compartilhamento de Dados</h3>
+            <p class="text-gray-600 leading-relaxed">
+                Não vendemos, trocamos ou transferimos as suas informações de identificação pessoal para terceiros.
+            </p>
+            <h3 class="text-xl font-semibold text-gray-700 mt-4 mb-2">Seus Direitos</h3>
+            <p class="text-gray-600 leading-relaxed">
+                Você tem o direito de aceder, retificar ou excluir os seus dados pessoais. Para exercer estes direitos, por favor, entre em contato conosco.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Rodapé da Página com fundo semi-transparente -->
+    <footer class="bg-gray-900/50 text-gray-200 rounded-t-xl mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-6 mt-8">
+        <p class="text-center text-sm">&copy; <span id="ano"></span> BR4S Treinamentos. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Script para atualizar o ano no rodapé -->
+    <script>
+        document.getElementById('ano').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
