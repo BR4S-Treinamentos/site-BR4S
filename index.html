@@ -12,11 +12,19 @@
             font-family: 'Inter', sans-serif;
             min-height: 100vh;
             background: linear-gradient(to right, #60a5fa, #fcd34d);
-            background-image: url('images/solar.jpg');
+            background-image: url('/images/solar.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
+        }
+            /* Em telas pequenas: ajusta para mostrar a imagem toda */
+        @media (max-width: 768px) {
+            body {
+                background-size: contain;
+                background-position: top;
+                background-attachment: scroll;
+            }
         }
     </style>
 </head>
