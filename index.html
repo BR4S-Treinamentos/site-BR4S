@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BR4S Treinamentos</title>
+    <link rel="icon" type="image/ico" href="/images/favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
@@ -115,9 +116,14 @@
             Esta Política de Privacidade descreve como a BR4S Treinamentos coleta, usa, armazena e protege as informações fornecidas por seus usuários. Ao utilizar nossos serviços ou interagir conosco, você concorda com os termos aqui descritos.
         </p>
 
-        <button onclick="document.getElementById('politica-completa').classList.toggle('hidden'); this.classList.add('hidden')" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+        <div class="mt-4">
+            <button id="btn-expandir" onclick="document.getElementById('politica-completa').classList.remove('hidden'); this.classList.add('hidden'); document.getElementById('btn-recolher').classList.remove('hidden');" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
             Saiba mais
-        </button>
+            </button>
+            <button id="btn-recolher" onclick="document.getElementById('politica-completa').classList.add('hidden'); this.classList.add('hidden'); document.getElementById('btn-expandir').classList.remove('hidden');" class="hidden bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600 transition">
+            Mostrar menos
+            </button>
+        </div>
 
         <div id="politica-completa" class="hidden mt-4 space-y-4">
 
